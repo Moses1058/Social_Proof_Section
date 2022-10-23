@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.star {
+    @apply flex px-1 justify-between mb-3 w-[7.3rem];
+}
+
+.review_card {
+    @apply flex flex-col bg-card_bg p-8 text-white rounded-lg max-w-2xl;
+}
+
+@layer components {
+    .bg_mobile {
+        background-image: url(../public/assets/bg-pattern-top-mobile.svg), url(../public/assets/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+
+    }
+
+    .bg_desktop {
+        background-image: url(../public/assets/bg-pattern-top-desktop.svg), url(../public/assets/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+    }
+
+    .rating_card {
+        @apply flex flex-col items-center justify-center px-5 py-3 bg-text_color mb-4 rounded-lg text-card_bg font-bold max-w-2xl w-full;
+    }
+}
